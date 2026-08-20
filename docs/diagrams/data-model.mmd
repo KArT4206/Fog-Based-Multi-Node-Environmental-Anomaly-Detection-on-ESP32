@@ -1,0 +1,15 @@
+erDiagram
+  NODE1 ||--o{ GATEWAY_STATE : updates
+  NODE2 ||--o{ GATEWAY_STATE : updates
+  GATEWAY_STATE {
+    float temperature
+    float pressure
+    float lux
+    int ldr1
+    int gas_adc
+    int motion
+    int sound
+    int ldr2
+    int risk
+    string status
+  }

@@ -1,0 +1,2 @@
+scenario,trial,event_expected,event_detected,alert_level,latency_ms,notes
+T01,1,normal,yes,NORMAL,,

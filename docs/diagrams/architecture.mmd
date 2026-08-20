@@ -1,0 +1,5 @@
+flowchart LR
+  N1[ESP32 Node 1\nBMP280 • BH1750\nMQ135 • LDR] -->|HTTP / Wi-Fi| G[ESP32 Node 3\nFog / Edge Gateway]
+  N2[ESP32 Node 2\nPIR • Sound • LDR] -->|HTTP / Wi-Fi| G
+  G --> W[Browser Dashboard]
+  G --> A[LED + Relay Alarm]

@@ -1,0 +1,13 @@
+flowchart TD
+  S[Start] --> C[Connect to Wi-Fi]
+  C --> R1[Read Node 1]
+  C --> R2[Read Node 2]
+  R1 --> T[Send HTTP telemetry]
+  R2 --> T
+  T --> G[Gateway receives + timestamps]
+  G --> B[Update baseline]
+  B --> F[Context fusion]
+  F --> X[Risk score]
+  X --> O[LED / relay action]
+  O --> D[Dashboard refresh]
+  D --> R1

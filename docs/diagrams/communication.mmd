@@ -1,0 +1,13 @@
+sequenceDiagram
+ participant N1 as Node 1
+ participant N2 as Node 2
+ participant G as Node 3
+ participant B as Browser
+ N1->>G: GET /api/node1
+ G-->>N1: NODE1_OK
+ N2->>G: GET /api/node2
+ G-->>N2: NODE2_OK
+ B->>G: GET /api/state
+ G-->>B: JSON state
+ G->>G: baseline + fusion + risk
+ G->>G: LEDs / relay
