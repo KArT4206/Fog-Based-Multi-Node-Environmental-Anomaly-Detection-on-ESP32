@@ -10,6 +10,8 @@ The design prioritizes **local processing, low-latency alerting, multi-node corr
 
 > **Important accuracy note:** this repository distinguishes implemented behavior from future/claimed performance. Latency, accuracy, precision, false-positive rate and power consumption must be measured on the finished hardware before they are reported as experimental results.
 
+> **Repository layout:** this repository documents the project (design, wiring, scoring logic, screenshots). The firmware, configuration templates and dataset live in a private repository, `Fog-Based-Multi-Node-Environmental-Anomaly-Detection-on-ESP32-code`.
+
 ---
 
 ## 1. Project title
@@ -73,6 +75,28 @@ The project intentionally avoids a cloud dependency for the core demo.
 - Responsive browser dashboard.
 - Client-side live history charts without external CDN dependencies.
 - No cloud/database required for the base hardware demonstration.
+
+---
+
+## Dashboard screenshots
+
+Node 3 serves a live dashboard on the local network. These captures show the gateway's real dashboard page (extracted from `node3_fog_gateway.ino`) driven by a desktop mock that reproduces the firmware's baseline learning and scoring rules (temperature delta 2/4 C, gas ratio 1.25/1.5, motion + sound) with simulated sensor streams for three scenarios. They illustrate the behaviour; they are **not** measurements from the physical build.
+
+| Normal | Safety event (motion + sound) | Environmental event (heat + gas) |
+|---|---|---|
+| ![Normal](docs/images/dashboard-normal.png) | ![Warning](docs/images/dashboard-safety-warning.png) | ![Critical](docs/images/dashboard-environmental-critical.png) |
+
+Diagrams and wiring (from the physical design):
+
+| Architecture | Data flow |
+|---|---|
+| ![Architecture](docs/images/architecture.png) | ![Communication](docs/images/communication.png) |
+
+| Node 1 wiring | Node 2 wiring | Node 3 wiring |
+|---|---|---|
+| ![Node 1](docs/images/node1-wiring.png) | ![Node 2](docs/images/node2-wiring.png) | ![Node 3](docs/images/node3-wiring.png) |
+
+![Overview poster](docs/images/project-overview-poster.png)
 
 ---
 
