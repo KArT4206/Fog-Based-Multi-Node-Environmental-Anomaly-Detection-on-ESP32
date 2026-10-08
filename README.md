@@ -221,46 +221,7 @@ The Wi-Fi, HTTP client, WebServer and Wire libraries are supplied by the ESP32 A
 
 ## 8. Repository structure
 
-```text
-fog-env-anomaly-monitoring/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── config/
-│   └── config.example.h
-├── src/
-│   ├── node1_environmental/
-│   │   ├── node1_environmental.ino
-│   │   └── config.h.example
-│   ├── node2_safety/
-│   │   ├── node2_safety.ino
-│   │   └── config.h.example
-│   └── node3_fog_gateway/
-│       ├── node3_fog_gateway.ino
-│       └── config.h.example
-├── docs/
-│   ├── architecture.md
-│   ├── workflow.md
-│   ├── wiring.md
-│   ├── metrics.md
-│   ├── testing.md
-│   ├── viva.md
-│   ├── diagrams/
-│   │   ├── architecture.mmd
-│   │   ├── workflow.mmd
-│   │   ├── communication.mmd
-│   │   └── data-model.mmd
-│   └── images/
-│       ├── architecture.png
-│       ├── workflow.png
-│       ├── communication.png
-│       ├── node1-wiring.png
-│       ├── node2-wiring.png
-│       ├── node3-wiring.png
-│       └── project-overview-poster.png
-└── tests/
-    └── README.md
-```
+This documentation repository contains `README.md`, `LICENSE` and `docs/` (architecture, workflow, wiring, metrics, testing, viva notes, Mermaid diagrams and images). The sketches under `src/`, `config/` and `tests/` described in the build guide are in the private code repository.
 
 ---
 
