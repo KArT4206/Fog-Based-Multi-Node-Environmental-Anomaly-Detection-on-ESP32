@@ -1,5 +1,8 @@
 # Fog-Based Multi-Node Environmental Anomaly Detection
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+![Last commit](https://img.shields.io/github/last-commit/KArT4206/Fog-Based-Multi-Node-Environmental-Anomaly-Detection-on-ESP32)
+
 A professional, GitHub-ready **Fog & Edge Computing** prototype built around **three ESP32 boards**:
 
 - **Node 1 – Environmental Edge Node:** BMP280, BH1750, MQ135 and LDR.
